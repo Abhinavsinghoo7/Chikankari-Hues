@@ -11,7 +11,13 @@ export default function Home() {
 
       <header className="bg-white shadow-sm py-4">
         <div className="container mx-auto px-6">
-          <h1 className="text-3xl font-bold text-rose-800">Chikankari Hues</h1>
+          <Image 
+            src="/logo1.jpeg" 
+            alt="Chikankari Hues" 
+            width={120} 
+            height={40}
+            className="h-10 w-auto"
+          />
         </div>
       </header>
 
@@ -19,17 +25,22 @@ export default function Home() {
         <section className="mb-16 text-center">
           <div className="relative h-96 overflow-hidden rounded-lg">
             <Image
-              src="/hero.jpg"  // Make sure this exists in public/
+              src="/main1.png"
               alt="Chikankari embroidery"
               fill
               className="object-cover"
+              priority
             />
           </div>
-          <h2 className="mt-8 text-2xl font-medium text-gray-800">
+          <h2 className="mt-8 text-3xl font-bold text-rose-800">
             Timeless Handcrafted Fashion
           </h2>
+          <p className="mt-4 text-lg text-gray-600">
+            Discover our exclusive collection of premium Chikankari wear
+          </p>
         </section>
       </main>
     </div>
   )
 }
+// Force rebuild
